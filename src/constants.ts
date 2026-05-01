@@ -35,7 +35,7 @@ export const MENU_ITEMS: Menu[] = [
     name: 'Smoked Beef Ribs',
     description: 'Tender, fall-off-the-bone beef ribs smoked for 12 hours over hickory wood.',
     price: 85,
-    image: '/regenerated_image_1777651073116.png',
+    image: '/regenerated_image_1777652998186.png',
     category: 'Signature'
   },
   {
@@ -43,7 +43,7 @@ export const MENU_ITEMS: Menu[] = [
     name: 'Jollof Rice + Grilled Chicken',
     description: 'Authentic smoky Jollof rice served with spicy grilled chicken and plantain.',
     price: 60,
-    image: '/regenerated_image_1777651083048.png',
+    image: '/regenerated_image_1777652994519.png',
     category: 'Local Fusion'
   },
   {

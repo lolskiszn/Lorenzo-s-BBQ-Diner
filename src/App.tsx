@@ -230,31 +230,31 @@ export default function App() {
         </section>
 
         {/* RIGHT COLUMN: Business Operations (40%) */}
-        <section className="lg:col-span-5 bg-zinc-900 p-8 flex flex-col text-stone-100 overflow-hidden border-l border-zinc-800">
-          <div className="flex-1 overflow-y-auto space-y-10 pr-2 custom-scrollbar-dark">
+        <section className="lg:col-span-5 bg-zinc-900 p-4 sm:p-8 flex flex-col text-stone-100 lg:overflow-hidden border-t sm:border-t-0 lg:border-l border-zinc-800">
+          <div className="flex-1 lg:overflow-y-auto space-y-8 sm:space-y-10 pr-0 lg:pr-2 custom-scrollbar-dark">
             {/* POS Stats */}
             <div>
-              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-bbq-gold mb-6 flex items-center gap-3">
+              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] text-bbq-gold mb-4 sm:mb-6 flex items-center gap-3">
                 <BarChart3 className="w-4 h-4" />
                 POS Dashboard Preview
               </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-zinc-800 p-5 rounded-2xl border border-zinc-700 shadow-xl group hover:border-bbq-gold/30 transition-all">
-                  <p className="text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">Revenue Today</p>
-                  <p className="text-2xl font-black text-bbq-gold flex items-baseline gap-1">
-                    <span className="text-xs uppercase">GHS</span> 1,840
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="bg-zinc-800 p-4 sm:p-5 rounded-2xl border border-zinc-700 shadow-xl group hover:border-bbq-gold/30 transition-all">
+                  <p className="text-[9px] sm:text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">Revenue Today</p>
+                  <p className="text-xl sm:text-2xl font-black text-bbq-gold flex items-baseline gap-1">
+                    <span className="text-[10px] uppercase">GHS</span> 1,840
                   </p>
                 </div>
-                <div className="bg-zinc-800 p-5 rounded-2xl border border-zinc-700 shadow-xl group hover:border-bbq-gold/30 transition-all">
-                  <p className="text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">Total Orders</p>
-                  <p className="text-2xl font-black">24</p>
+                <div className="bg-zinc-800 p-4 sm:p-5 rounded-2xl border border-zinc-700 shadow-xl group hover:border-bbq-gold/30 transition-all">
+                  <p className="text-[9px] sm:text-[10px] text-zinc-500 uppercase font-black tracking-widest mb-1">Total Orders</p>
+                  <p className="text-xl sm:text-2xl font-black">24</p>
                 </div>
               </div>
             </div>
 
             {/* Recent Orders Table */}
-            <div className="bg-zinc-800 rounded-2xl border border-zinc-700 p-6 flex-1 shadow-2xl">
-              <p className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 mb-6 flex justify-between items-center">
+            <div className="bg-zinc-800 rounded-2xl border border-zinc-700 p-4 sm:p-6 flex-1 shadow-2xl">
+              <p className="text-[9px] sm:text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 mb-4 sm:mb-6 flex justify-between items-center">
                 Live Order Stream
                 <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
               </p>
