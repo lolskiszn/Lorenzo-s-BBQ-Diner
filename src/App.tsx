@@ -79,47 +79,47 @@ export default function App() {
   };
 
   return (
-    <div className="h-screen bg-stone-50 text-zinc-900 font-sans flex flex-col overflow-hidden selection:bg-amber-500 selection:text-zinc-900">
+    <div className="min-h-screen lg:h-screen bg-stone-50 text-zinc-900 font-sans flex flex-col lg:overflow-hidden selection:bg-amber-500 selection:text-zinc-900">
       {/* Top Header / Demo Branding */}
-      <header className="bg-zinc-900 text-stone-100 px-6 py-3 flex justify-between items-center border-b-2 border-bbq-gold z-50">
+      <header className="bg-zinc-900 text-stone-100 px-4 sm:px-6 py-3 flex justify-between items-center border-b-2 border-bbq-gold z-50 sticky top-0">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-bbq-red rounded-lg flex items-center justify-center font-bold text-xl italic text-bbq-gold shadow-lg">L</div>
-          <h1 className="text-xl font-black tracking-tight uppercase italic decoration-bbq-gold underline-offset-4 decoration-2">Lorenzo’s BBQ + Diner</h1>
+          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-bbq-red rounded-lg flex items-center justify-center font-bold text-lg sm:text-xl italic text-bbq-gold shadow-lg">L</div>
+          <h1 className="text-sm sm:text-xl font-black tracking-tight uppercase italic decoration-bbq-gold underline-offset-4 decoration-2">Lorenzo’s BBQ</h1>
         </div>
-        <div className="flex items-center gap-6">
-          <span className="hidden sm:inline text-[10px] uppercase tracking-[0.3em] text-zinc-400 font-bold">Product Sales Demo</span>
-          <button className="bg-bbq-red hover:bg-red-700 text-white px-5 py-2 rounded-full text-[10px] font-black transition-all border border-red-900 shadow-xl uppercase tracking-widest active:scale-95">
-            Let’s Discuss This Setup
+        <div className="flex items-center gap-3 sm:gap-6">
+          <span className="hidden lg:inline text-[10px] uppercase tracking-[0.3em] text-zinc-400 font-bold">Product Sales Demo</span>
+          <button className="bg-bbq-red hover:bg-red-700 text-white px-4 sm:px-5 py-2 rounded-full text-[9px] sm:text-[10px] font-black transition-all border border-red-900 shadow-xl uppercase tracking-widest active:scale-95 whitespace-nowrap">
+            Let’s Discuss
           </button>
         </div>
       </header>
 
-      <main className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-0 overflow-hidden">
+      <main className="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-0 lg:overflow-hidden">
         
         {/* LEFT COLUMN: Customer Ordering Experience (60%) */}
-        <section className="lg:col-span-7 bg-stone-50 p-6 flex flex-col overflow-hidden border-r border-stone-200">
-          <div className="flex-1 overflow-y-auto space-y-8 pr-2 custom-scrollbar">
+        <section className="lg:col-span-7 bg-stone-50 p-4 sm:p-6 flex flex-col lg:overflow-hidden border-b lg:border-b-0 lg:border-r border-stone-200">
+          <div className="flex-1 lg:overflow-y-auto space-y-8 pr-0 lg:pr-2 custom-scrollbar">
             {/* Mini Hero */}
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="relative bg-zinc-900 rounded-2xl p-8 overflow-hidden min-h-[200px] flex items-center shadow-2xl accent-border-l"
+              className="relative bg-zinc-900 rounded-2xl p-6 sm:p-8 overflow-hidden min-h-[180px] sm:min-h-[200px] flex items-center shadow-2xl accent-border-l"
             >
               <div className="relative z-10 w-full lg:w-2/3">
-                <h2 className="text-3xl font-black text-stone-100 leading-tight mb-3">
+                <h2 className="text-2xl sm:text-3xl font-black text-stone-100 leading-tight mb-3">
                   Smoky BBQ. Fresh Meals. <br/>
                   <span className="text-bbq-gold">Easy Online Ordering.</span>
                 </h2>
-                <p className="text-stone-400 text-sm mb-6 max-w-sm">
+                <p className="text-stone-400 text-xs sm:text-sm mb-6 max-w-sm">
                   Order your favorite BBQ meals for pickup or delivery in just a few clicks.
                 </p>
                 <div className="flex gap-3">
-                  <a href="#menu" className="bg-bbq-gold text-zinc-900 px-6 py-2 rounded-md text-[10px] font-black uppercase tracking-widest hover:bg-white transition-colors">Order Now</a>
-                  <a href="#menu" className="border border-stone-600 text-stone-300 px-6 py-2 rounded-md text-[10px] font-black uppercase tracking-widest hover:bg-stone-800 transition-colors">View Menu</a>
+                  <a href="#menu" className="bg-bbq-gold text-zinc-900 px-4 sm:px-6 py-2 rounded-md text-[9px] sm:text-[10px] font-black uppercase tracking-widest hover:bg-white transition-colors">Order Now</a>
+                  <a href="#menu" className="border border-stone-600 text-stone-300 px-4 sm:px-6 py-2 rounded-md text-[9px] sm:text-[10px] font-black uppercase tracking-widest hover:bg-stone-800 transition-colors">View Menu</a>
                 </div>
               </div>
               <div 
-                className="absolute right-[-20px] top-0 h-full w-1/2 opacity-40 bg-cover bg-center skew-x-[-12deg] scale-110" 
+                className="absolute right-[-20px] top-0 h-full w-1/2 opacity-30 sm:opacity-40 bg-cover bg-center skew-x-[-12deg] scale-110" 
                 style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&q=80&w=600')" }}
               ></div>
             </motion.div>
