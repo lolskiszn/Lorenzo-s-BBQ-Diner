@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Host Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-bbq-red: #991b1b;
+  --color-bbq-black: #18181b;
+  --color-bbq-charcoal: #27272a;
+  --color-bbq-cream: #fafaf9;
+  --color-bbq-gold: #f59e0b;
+}
+
+@layer base {
+  body {
+    @apply bg-stone-50 text-zinc-900 font-sans;
+  }
+}
+
+.geometric-card {
+  @apply bg-white rounded-xl shadow-sm border border-stone-200 transition-all;
+}
+
+.accent-border-l {
+  @apply border-l-4 border-bbq-red;
+}
+
+.accent-border-b {
+  @apply border-b-2 border-bbq-gold;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-200 rounded-full hover:bg-zinc-300 transition-colors;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-stone-300;
+}
+
+.custom-scrollbar-dark::-webkit-scrollbar-thumb {
+  @apply bg-zinc-700;
+}
